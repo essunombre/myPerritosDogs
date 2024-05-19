@@ -1,3 +1,7 @@
+import { loadHeaderFooter } from "./utils.mjs";
+
+loadHeaderFooter()
+
 console.log("This will be the repo for the dogs rpoyect api");
 console.log(fetch("https://dog.ceo/api/breed/dachshund/images/random"));
 
