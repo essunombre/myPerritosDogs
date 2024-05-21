@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body{
+  background-color: #6ed5b1; 
+}
+p {
+  font-family: "Open Sans";
+}
+
+h1, a {
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+h2 {
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* nav bar */
+.header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-logo {
+  margin-bottom: 10px; /* Space between the logo and the nav bar */
+}
+
+.nav-logo img {
+  max-width: 100px; /* Adjust dog size */
+  height: auto;
+}
+
+.topnav {
+  width: 100%;
+  background-color: #081C15;
+  padding: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between; /* Distribute links evenly */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the nav-links container */
+}
+
+.nav-links a {
+  flex: 1; /* Ensure all links take up equal space */
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-links a:hover {
+  background-color: #1B4332;
+  color: white;
+}
+
+/* footer */
+#main-footer{
+  background-color: #081C15; 
+  color: white; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items vertically */
+}
+
+.social-media a {
+  margin: 0 10px; /* Add space between icons */
+}
+
+.social-link img {
+  width: 40px; /* Adjust the size of the icons */
+  height: auto;
+}
+
+/* dog individual */
+
+.dogIndividual{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
