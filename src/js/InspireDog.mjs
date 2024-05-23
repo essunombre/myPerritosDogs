@@ -2,7 +2,7 @@ import { loadHeaderFooter } from "./utils.mjs";
 import { getRandomDog } from "./Dog.mjs";
 import { getRandomQuote } from "./Quote.mjs";
 
-const dogUrl = "https://dog.ceo/api/breed/dachshund/images/random";
+const dogUrl = "https://dog.ceo/api/breeds/image/random";
 const quoteUrl = "https://type.fit/api/quotes";
 
 export default class InspireMeCard {

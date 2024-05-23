@@ -1,10 +1,4 @@
-console.log('I am dog.js')
-
-const section = document.querySelector('.container')
-const button = document.querySelector('.dogRandom')
-
-console.log(section)
-console.log(button)
+// console.log('I am dog.js')
 
 // button.addEventListener('click', getRandomDog)
 
