@@ -7,14 +7,37 @@
     <link rel="icon" href="/images/turtle.png" />
     <title>Perritos Breeds</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <script type="module" src="../js/DogList.js"></script>
+    <script type="module" src="../js/breeds.js"></script>
 </head>
-
 <body>
     <header class="divider" id="main-header"></header>
     <main>
-        <div id="app"></div>
-
+        <select id="breed-selector"></select>
+            <!-- Slideshow container -->
+    <div class="container slideshow">
+        <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+          <div class="image-list">
+            <img src="/images/corgi1.png" alt="img-1" class="image-item">
+            <img src="/images/corgi2.png" alt="img-2" class="image-item">
+            <img src="/images/corgi3.png" alt="img-3" class="image-item">
+            <img src="/images/corgi1.png" alt="img-4" class="image-item">
+            <img src="/images/corgi2.png" alt="img-5" class="image-item">
+            <img src="/images/corgi3.png" alt="img-6" class="image-item">
+            <img src="/images/corgi1.png" alt="img-7" class="image-item">
+            <img src="/images/corgi2.png" alt="img-8" class="image-item">
+            <img src="/images/corgi3.png" alt="img-9" class="image-item">
+            <img src="/images/corgi1.png" alt="img-10" class="image-item">
+          </div>
+          <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+        </div>
+        <div class="slider-scrollbar">
+          <div class="scrollbar-track">
+            <div class="scrollbar-thumb">
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="main-footer"></footer>
 </body>

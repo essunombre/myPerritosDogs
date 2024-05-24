@@ -11,13 +11,22 @@ h1,
 a {
   font-family: "Montserrat";
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
+  font-size: 4rem;
 }
 h2 {
   font-family: "GFS Didot", serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
+  font-size: 3rem;
+}
+h3{
+  font-family: "GFS Didot", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2rem;
+  
 }
 
 /* nav bar */
@@ -90,7 +99,6 @@ h2 {
 }
 
 /* Slideshow */
-
 .slider-wrapper .image-list {
   display: grid;
   gap: 18px;
@@ -108,6 +116,7 @@ h2 {
 .slider-wrapper .image-list .image-item {
   width: 325px;
   height: 400px;
+  /* object-fit: cover; */
   object-fit: cover;
 }
 
@@ -204,7 +213,7 @@ h2 {
   }
   .slider-wrapper .image-list .image-item {
     width: 280px;
-    height: 380px;
+    height: 580px;
   }
 
   .slider-scrollbar .scrollbar-thumb {
