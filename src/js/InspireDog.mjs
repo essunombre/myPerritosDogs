@@ -30,13 +30,15 @@ function quoteTemplate(dog, quote) {
   const author = quote.author.replace(", type.fit", "");
   return `
   <div class="inspiration">
-  <h1>Inspire me!</h1>
+  <h1>¡Andre! ¡wouuf guau guuuuaaau! guuf grr brrr guau</h1>
+  <h2><i>(¡Andre! solo sigue brillando!, ya lo has hecho antes)<i></h2>
+  <h3><i>Traduccion oficial de Perro a Español.</i></h3>
   <img
     class="dogInspire"
     src="${dog.message}"
     alt="randomDogPicture"
     />
-    <h1>${quote.text}</h1>
+    <h1>Andrea: ${quote.text}</h1>
     <h2>${author}</h2></div>`
 }
 

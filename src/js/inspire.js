@@ -45,5 +45,5 @@ document.querySelector(".getRandomPicture").addEventListener("click", () => {
 
     // Debugging: Log the image element after hiding
     console.log("After hiding:", inspirationImage);
-  }, 2500); // Match the duration of the shake animation
+  }, 4000); // Match the duration of the shake animation
 });
