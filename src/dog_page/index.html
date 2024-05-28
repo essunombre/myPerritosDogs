@@ -7,18 +7,24 @@
     <link rel="icon" href="/images/turtle.png" />
     <title>Perrito</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <script type="module" src="../js/InspireDog.mjs"></script>
+    <script type="module" src="../js/inspire.js"></script>
 </head>
 
 <body>
-    <header class="divider" id="main-header"></header>
-    <main>
-        <section>
-            <h1>Inspire me!</h1>
-            <button class="btn dogRandom"> Get a Perrito</button>
-        </section> 
-        <div class="container"></div>
-    </main>
+    <div class="mainDiv">
+        <header class="divider" id="main-header"></header>
+        <main>
+            <!-- Static image container -->
+            <div class="static-container">
+                <img src="/images/alertLupita.png" class="inspiration hidden" alt="Inspirational Image">
+            </div>
+            <section>
+                <button class="btn downloadDog"> Download Perrito</button>
+                <button class="btn getRandomPicture"> New Perrito</button>
+            </section>
+            <div class="container"></div>
+        </main>
+    </div>
     <footer id="main-footer"></footer>
 </body>
 

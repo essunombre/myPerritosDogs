@@ -1,7 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Rounded&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+/* colors
+b7e4c7
+52b788
+40916c
+1b4332
+081c15 */
+
+/* Animation */
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Image styles */
+.hidden {
+  display: none;
+}
+
+.shake {
+  animation: shake 2s;
+}
+
+/* Geneal */
+main {
+  background-color: #40916c;
+}
 body {
-  background-color: #6ed5b1;
+  background-color: #1b4332;
 }
 p {
   font-family: "Open Sans";
@@ -21,12 +51,40 @@ h2 {
   font-style: normal;
   font-size: 3rem;
 }
-h3{
+h3 {
   font-family: "GFS Didot", serif;
   font-weight: 200;
   font-style: normal;
   font-size: 2rem;
-  
+}
+
+.dogInspire {
+  width: 400px;
+  height: 400px;
+  /* object-fit: cover; */
+  object-fit: cover;
+}
+
+/* buttonsInspire */
+.getRandomPicture,
+.downloadDog {
+  background-color: #b7e4c7; /* Green */
+  border: none;
+  color: #081c15;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.getRandomPicture:hover,
+.downloadDog:hover {
+  background-color: #95d5b2; /* Lighter green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
 }
 
 /* nav bar */
@@ -120,12 +178,24 @@ h3{
   object-fit: cover;
 }
 
+/* colors
+b7e4c7
+52b788
+40916c
+1b4332
+081c15 */
+
+/* this is for the text in the views */
+.mainDiv {
+  align-items: center;
+  text-align: center;
+}
 .body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #6ed5b1;
+  background-color: #b7e4c7;
 }
 
 .container .slider-scrollbar {
@@ -143,7 +213,7 @@ h3{
   top: 50%;
   height: 50px;
   width: 50px;
-  color: aliceblue;
+  color: #b7e4c7;
   border: none;
   outline: none;
   background: #0000;
@@ -154,7 +224,7 @@ h3{
 }
 
 .slider-wrapper .slide-button:hover {
-  background: purple;
+  background: #1b4332;
 }
 
 .slider-wrapper .slide-button#prev-slide {
@@ -171,13 +241,13 @@ h3{
   background: #ccc;
   position: relative;
   border-radius: 4px;
-  background-color: aqua;
+  background-color: #b7e4c7;
 }
 .slider-scrollbar .scrollbar-thumb {
   position: absolute;
   height: 100%;
   width: 50%;
-  background-color: black;
+  background-color: #1b4332;
   border-radius: inherit;
   cursor: grab;
 }
@@ -219,4 +289,32 @@ h3{
   .slider-scrollbar .scrollbar-thumb {
     width: 20%;
   }
+}
+
+/* for the breed selector */
+.selectorBreed {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none; /* Remove the default focus outline */
+  background-color: #f9f9f9; /* Background color */
+  color: #333; /* Text color */
+  width: 200px; /* Set a fixed width */
+  margin-bottom: 2rem;
+}
+
+/* Style the options within the select dropdown */
+.selectorBreed option {
+  padding: 10px;
+}
+
+/* Style the select when it's hovered */
+.selectorBreed:hover {
+  border-color: #aaa;
+}
+
+/* Style the select when it's focused */
+.selectorBreed:focus {
+  border-color: #555;
 }

@@ -2,19 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/images/turtle.png" />
-    <title>Perritos Breeds</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script type="module" src="../js/breeds.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/images/turtle.png" />
+  <title>Perritos Breeds</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="module" src="../js/breeds.js"></script>
 </head>
+
 <body>
-    <header class="divider" id="main-header"></header>
+  <header class="divider" id="main-header"></header>
+  <div class="mainDiv">
     <main>
-        <select id="breed-selector"></select>
-            <!-- Slideshow container -->
-    <div class="container slideshow">
+      <h2>Select a Breed:</h2>
+      <select class="selectorBreed" id="breed-selector"></select>
+      <!-- Slideshow container -->
+      <div class="container slideshow">
         <div class="slider-wrapper">
           <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
           <div class="image-list">
@@ -39,7 +42,8 @@
         </div>
       </div>
     </main>
-    <footer id="main-footer"></footer>
+  </div>
+  <footer id="main-footer"></footer>
 </body>
 
 </html>

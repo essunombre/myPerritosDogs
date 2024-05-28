@@ -50,6 +50,13 @@ export async function populateSlideshowImagesBreed(breed) {
     if (randomDogImage) {
       console.log(randomDogImage);
       img.src = randomDogImage.message;
+      // Create anchor tag
+      const link = document.createElement('a');
+      link.href = `/dogcito/index.html?dog=${breed}&image=${encodeURIComponent(randomDogImage.message)}`;
+      link.appendChild(img.cloneNode(true)); // Clone the image element and append it to the link
+
+      // Replace the image element with the anchor tag
+      img.parentNode.replaceChild(link, img);
     }
   }
 }
