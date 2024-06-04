@@ -13,8 +13,36 @@
 <body>
     <header class="divider" id="main-header"></header>
     <main>
-        <div id="app"></div>
-        
+        <div class="story-form mainDiv">
+            <h1>Tell us more!</h1>
+            <form name="story">
+                <fieldset class="perritoForm">
+                    <legend>Dog</legend>
+                    <div class="story__dog">
+                        <label for="dname">Dog Name:</label>
+                        <input name="dname" required>
+                        <label for="gender">Gender:</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="owner">
+                        <label for="oname">Owner's Name:</label>
+                        <input name="oname" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="story__narrative">
+                        <label for="description">Story:</label>
+                        <textarea id="description" name="description" maxlength="350" required></textarea>
+                    </div>
+
+                </fieldset>
+                <button class="btn submitStory" id="checkoutSubmit" type="submit">Submit</button>
+            </form>
+        </div>
+
     </main>
     <footer id="main-footer"></footer>
 </body>

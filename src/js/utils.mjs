@@ -88,3 +88,28 @@ export async function loadHeaderFooter() {
       updateScrollThumbPosition();
     });
   };
+
+  // Function to add the dog image URL to favorites
+export function addToFavorites(dogImageUrl) {
+  let favorites = getLocalStorage('favorite-dogs');
+  if (!favorites) {
+    favorites = [];
+  }
+
+  if (!favorites.includes(dogImageUrl)) {
+    favorites.push(dogImageUrl);
+    setLocalStorage('favorite-dogs', favorites);
+    alert('Dog added to favorites!');
+  } else {
+    alert('Dog is already in favorites!');
+  }
+}
+
+// Local Storage utility functions
+export function getLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+
+export function setLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}

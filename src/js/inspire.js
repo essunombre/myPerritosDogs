@@ -1,7 +1,6 @@
-import { loadHeaderFooter } from "./utils.mjs";
+import { loadHeaderFooter, addToFavorites } from "./utils.mjs";
+import { downloadDogImage, clearInspiration } from "./InspireDog.mjs";
 import InspireMeCard from "./InspireDog.mjs";
-import { downloadDogImage } from "./InspireDog.mjs";
-import { clearInspiration } from "./InspireDog.mjs";
 
 loadHeaderFooter();
 // getRandomDog(dogUrl);
@@ -13,6 +12,11 @@ card.init();
 // Add event listener to the button to download the dog image
 document.querySelector(".btn.downloadDog").addEventListener("click", () => {
   downloadDogImage(card.dog.message);
+});
+
+// Add event listener to the button to favorite the dog image
+document.querySelector(".btn.addFavorites").addEventListener("click", () => {
+  addToFavorites(card.dog.message);
 });
 
 document.querySelector(".getRandomPicture").addEventListener("click", () => {
