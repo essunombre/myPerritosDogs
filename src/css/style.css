@@ -95,7 +95,8 @@ h3,
 }
 
 .getRandomPicture:hover,
-.downloadDog:hover {
+.downloadDog:hover,
+.addFavorites:hover {
   background-color: #95d5b2; /* Lighter green on hover */
   transform: scale(1.05); /* Slightly enlarge the button */
 }
@@ -346,7 +347,7 @@ b7e4c7
   object-fit: cover;
 }
 
-#favorite-dogs-container{
+#favorite-dogs-container {
   justify-content: center;
   align-items: center;
   /* margin-left: 8rem; */
